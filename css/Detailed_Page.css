@@ -1,0 +1,587 @@
+.mediaViewInfo {
+	--web-view-name: Detailed Page;
+	--web-view-id: Detailed_Page;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Detailed_Page;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#wrap {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(242,242,242,1);
+	overflow: hidden;
+	--web-view-name: Detailed Page;
+	--web-view-id: Detailed_Page;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+
+#floor {
+	fill: rgba(217,217,217,1);
+}
+.floor {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 1718px;
+	height: 732px;
+	left: 114px;
+	top: 252px;
+}
+.closet {
+	fill: rgba(166,166,166,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_23 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 346px;
+	top: 291px;
+}
+
+.Rectangle_24 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 346px;
+	top: 450px;
+}
+
+.Rectangle_25 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 346px;
+	top: 609px;
+}
+
+.Rectangle_26 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 346px;
+	top: 768px;
+}
+
+.Rectangle_27 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 569px;
+	top: 291px;
+}
+
+.Rectangle_28 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 569px;
+	top: 450px;
+}
+
+.Rectangle_29 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 569px;
+	top: 609px;
+}
+
+.Rectangle_30 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 569px;
+	top: 768px;
+}
+
+.Rectangle_31 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 1085px;
+	top: 291px;
+}
+
+.Rectangle_32 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 1085px;
+	top: 450px;
+}
+
+.Rectangle_33 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 1085px;
+	top: 609px;
+}
+
+.Rectangle_34 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 1085px;
+	top: 768px;
+}
+
+.Rectangle_35 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 1308px;
+	top: 291px;
+}
+
+.Rectangle_37 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 1308px;
+	top: 609px;
+}
+#Group_33 {
+	position: absolute;
+	width: 224px;
+	height: 160px;
+	left: 1308px;
+	top: 450px;
+	overflow: visible;
+}
+
+.Rectangle_36 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 0px;
+	top: 0px;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: page;
+	--web-action-target: More_Detailed_Page_3.html;
+	cursor: pointer;
+}
+#n__bi {
+	left: 78px;
+	top: 56px;
+	position: absolute;
+	overflow: visible;
+	width: 71px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(238,238,238,1);
+}
+
+.Rectangle_38 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 160px;
+	left: 1308px;
+	top: 768px;
+}
+#n__bk {
+	left: 1316px;
+	top: 772px;
+	position: absolute;
+	overflow: visible;
+	width: 19px;
+	height: 52px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#n__bl {
+	left: 1316px;
+	top: 613px;
+	position: absolute;
+	overflow: visible;
+	width: 17px;
+	height: 30px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#n__bm {
+	left: 1316px;
+	top: 454px;
+	position: absolute;
+	overflow: visible;
+	width: 17px;
+	height: 30px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#n__bn {
+	left: 1316px;
+	top: 295px;
+	position: absolute;
+	overflow: visible;
+	width: 17px;
+	height: 30px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#n__bo {
+	left: 1093px;
+	top: 772px;
+	position: absolute;
+	overflow: visible;
+	width: 19px;
+	height: 52px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#n__bp {
+	left: 1093px;
+	top: 613px;
+	position: absolute;
+	overflow: visible;
+	width: 17px;
+	height: 30px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#n__bq {
+	left: 1093px;
+	top: 454px;
+	position: absolute;
+	overflow: visible;
+	width: 17px;
+	height: 30px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#n__br {
+	left: 1093px;
+	top: 295px;
+	position: absolute;
+	overflow: visible;
+	width: 17px;
+	height: 30px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#Text_bs {
+	left: 1403px;
+	top: 836px;
+	position: absolute;
+	overflow: visible;
+	width: 36px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(238,238,238,1);
+}
+#n__bt {
+	left: 577px;
+	top: 772px;
+	position: absolute;
+	overflow: visible;
+	width: 17px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#n_0 {
+	left: 577px;
+	top: 613px;
+	position: absolute;
+	overflow: visible;
+	width: 31px;
+	height: 30px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#n_1 {
+	left: 577px;
+	top: 454px;
+	position: absolute;
+	overflow: visible;
+	width: 25px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#n_2 {
+	left: 577px;
+	top: 295px;
+	position: absolute;
+	overflow: visible;
+	width: 29px;
+	height: 30px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#n_3 {
+	left: 354px;
+	top: 772px;
+	position: absolute;
+	overflow: visible;
+	width: 29px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#n_4 {
+	left: 354px;
+	top: 613px;
+	position: absolute;
+	overflow: visible;
+	width: 31px;
+	height: 30px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#n_5 {
+	left: 354px;
+	top: 454px;
+	position: absolute;
+	overflow: visible;
+	width: 29px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#n_6 {
+	left: 354px;
+	top: 295px;
+	position: absolute;
+	overflow: visible;
+	width: 29px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(25,25,25,1);
+}
+#Text_b {
+	left: 1171px;
+	top: 518px;
+	position: absolute;
+	overflow: visible;
+	width: 53px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(238,238,238,1);
+}
+#Text_ca {
+	left: 1395px;
+	top: 359px;
+	position: absolute;
+	overflow: visible;
+	width: 53px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(238,238,238,1);
+}
+#n__b {
+	left: 655px;
+	top: 824px;
+	position: absolute;
+	overflow: visible;
+	width: 53px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(238,238,238,1);
+}
+#n__ca {
+	left: 432px;
+	top: 824px;
+	position: absolute;
+	overflow: visible;
+	width: 53px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(238,238,238,1);
+}
+#Text_cb {
+	left: 441px;
+	top: 518px;
+	position: absolute;
+	overflow: visible;
+	width: 35px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(238,238,238,1);
+}
+#n___b {
+	left: 421px;
+	top: 653px;
+	position: absolute;
+	overflow: visible;
+	width: 75px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(238,238,238,1);
+}
+#Group_13 {
+	position: absolute;
+	width: 110px;
+	height: 38px;
+	left: 1702px;
+	top: 200px;
+	overflow: visible;
+	transition: all 0.30000001192092896s ease-out;
+	--web-animation: fadein 0.30000001192092896s ease-out;
+	--web-action-type: page;
+	--web-action-target: Main_page___1F.html;
+	cursor: pointer;
+}
+#Group_9 {
+	position: absolute;
+	width: 110px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Rectangle_2_b {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_2_b {
+	filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 128px;
+	height: 56px;
+	left: 0px;
+	top: 0px;
+}
+#Text_cc {
+	left: 20px;
+	top: 6px;
+	position: absolute;
+	overflow: visible;
+	width: 71px;
+	height: 26px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(104,104,104,1);
+}
