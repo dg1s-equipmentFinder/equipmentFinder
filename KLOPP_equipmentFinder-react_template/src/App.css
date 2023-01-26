@@ -1,0 +1,202 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+body{
+    background-color: #F2F2F2 0% 0% no-repeat padding-box;
+}
+#r{
+	display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+#r div:nth-child(2){
+	grid-area: main;
+    height: 88.35vh;
+	width: 100%;
+}
+
+#header{
+	font-size: 0rem;
+	grid-area: header;
+    height: 7.65vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-end;
+}
+
+#title{
+    width: 600px;
+    height: 65px;
+    text-align: left;
+    font: normal normal bold 40px/65px "Noto Sans KR";
+    letter-spacing: 0px;
+    color: #0A2BA0;
+    opacity: 1;
+	cursor: pointer;
+}
+
+.search{
+ justify-self: end;
+}
+
+#searchBar{
+    width: 558px;
+    height: 58px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 26px;
+    opacity: 1;
+    display: grid;
+    grid-template-columns: 490px 1fr;
+    place-items: center;
+}
+
+#searchText{
+    top: 64px;
+    left: 1294px;
+    width: 440px;
+    height: 26px;
+    text-align: left;
+    font: normal normal medium 20px/24px Pretendard;
+    letter-spacing: 0px;
+    color: #686868;
+    opacity: 1;
+}
+
+.searchIco{
+    width: 30px;
+	height: 30px;
+}
+#searchIco{
+    top: 62px;
+    left: 1753px;
+    width: 30px;
+    height: 30px;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 0.8;
+}
+
+#headerline{
+    width: 90%;
+	height: 2px;
+    border: 2px solid #707070;
+    opacity: 1;
+    display: block;
+}
+
+header:after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+
+#footer{
+	grid-area: footer;
+    height: 4vh;
+	width: 100%;
+	font-size: 0%;
+    display: grid;
+    grid-template-columns: 280fr 1340fr 150fr;
+    align-items: start;
+}
+
+#copyright{
+    text-align: right;
+    font: normal normal normal 15px/18px Roboto;
+    letter-spacing: 0px;
+    color: #686868;
+    opacity: 1;
+}
+#creditTxt{
+    text-align: left;
+    text-decoration: underline;
+    font: normal normal normal 15px/18px Roboto;
+    letter-spacing: 0px;
+    color: #686868;
+    opacity: 1;
+	cursor: pointer;
+}
+.no-outline{
+    outline: none;
+    border-right:0px;
+    border-top:0px;
+    border-left:0px;
+    border-bottom:0px;
+    background-color: transparent;
+}
+
+#credit{
+	text-align: center;
+	font: normal normal 800 20px/41px Pretendard;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#credit h2{
+	font: normal normal 800 35px/41px Pretendard;
+}
+#credit h3{
+	font: normal normal 800 25px/41px Pretendard;
+}
+
+#ico{
+	width: 1.2em;
+	height:1.2em;
+}

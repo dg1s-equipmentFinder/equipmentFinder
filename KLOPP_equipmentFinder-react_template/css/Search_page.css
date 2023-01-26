@@ -1,0 +1,461 @@
+.mediaViewInfo {
+	--web-view-name: Search page_Normal;
+	--web-view-id: Search_page_Normal;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Search_page_Normal;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Search_page_Normal {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(242,242,242,1);
+	overflow: hidden;
+	--web-view-name: Search page_Normal;
+	--web-view-id: Search_page_Normal;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#n__ {
+	left: 66px;
+	top: 41px;
+	position: absolute;
+	overflow: visible;
+	width: 601px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Noto Sans CJK KR;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 45px;
+	color: rgba(10,43,160,1);
+}
+#Group_10 {
+	position: absolute;
+	width: 110px;
+	height: 58px;
+	left: 1702px;
+	top: 48px;
+	overflow: visible;
+	transition: all 0.30000001192092896s ease-out;
+	--web-animation: fadein 0.30000001192092896s ease-out;
+	--web-action-type: page;
+	--web-action-target: Main_page___1F.html;
+	cursor: pointer;
+}
+#Group_9 {
+	position: absolute;
+	width: 110px;
+	height: 58px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Rectangle_2 {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_2 {
+	filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 128px;
+	height: 76px;
+	left: 0px;
+	top: 0px;
+}
+#Text {
+	left: 20px;
+	top: 16px;
+	position: absolute;
+	overflow: visible;
+	width: 71px;
+	height: 26px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(104,104,104,1);
+}
+#n_023_KLOPP_all_rights_reserve {
+	left: 66px;
+	top: 1038px;
+	position: absolute;
+	overflow: visible;
+	width: 225px;
+	height: 20px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(104,104,104,1);
+}
+#n_ {
+	left: 1725px;
+	top: 1038px;
+	position: absolute;
+	overflow: visible;
+	width: 80px;
+	white-space: nowrap;
+	transition: all 0.30000001192092896s ease-out;
+	--web-animation: fadein 0.30000001192092896s ease-out;
+	--web-action-type: page;
+	--web-action-target: Search_page_Normal___1.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(104,104,104,1);
+	text-decoration: underline;
+}
+#Line_1 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_1 {
+	overflow: visible;
+	position: absolute;
+	width: 1746px;
+	height: 2px;
+	left: 66px;
+	top: 124px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Rectangle_18 {
+	opacity: 0.5;
+	fill: rgba(253,185,102,1);
+}
+.Rectangle_18 {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 1764px;
+	height: 824px;
+	left: 66px;
+	top: 188px;
+}
+#Rectangle_19 {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_19 {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 961px;
+	height: 76px;
+	left: 489px;
+	top: 208px;
+}
+#Search_Here {
+	left: 529px;
+	top: 224px;
+	position: absolute;
+	overflow: visible;
+	width: 129px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(105,105,105,1);
+}
+#Group_6 {
+	position: absolute;
+	width: 130px;
+	height: 50px;
+	left: 1294px;
+	top: 212px;
+	overflow: visible;
+	transition: all 0.30000001192092896s ease-out;
+	--web-animation: fadein 0.30000001192092896s ease-out;
+	--web-action-type: page;
+	--web-action-target: Search_page_Special_Error.html;
+	cursor: pointer;
+}
+#Rectangle_20 {
+	fill: rgba(226,226,226,1);
+}
+.Rectangle_20 {
+	position: absolute;
+	overflow: visible;
+	width: 130px;
+	height: 50px;
+	left: 0px;
+	top: 0px;
+}
+#XMLID_223_ {
+	opacity: 0.8;
+	fill: rgba(25,25,25,1);
+}
+.XMLID_223_ {
+	overflow: visible;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 86px;
+	top: 10px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Text_ {
+	left: 12px;
+	top: 12px;
+	position: absolute;
+	overflow: visible;
+	width: 73px;
+	height: 26px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(25,25,25,1);
+}
+#Text_ba {
+	left: 238px;
+	top: 328px;
+	position: absolute;
+	overflow: visible;
+	width: 105px;
+	height: 29px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(25,25,25,1);
+}
+#Line_2 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_2 {
+	overflow: visible;
+	position: absolute;
+	width: 1634px;
+	height: 2px;
+	left: 122px;
+	top: 300px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#n___ba {
+	opacity: 0.94;
+	left: 238px;
+	top: 367px;
+	position: absolute;
+	overflow: visible;
+	width: 85px;
+	height: 24px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(25,25,25,1);
+}
+#n__bb {
+	left: 238px;
+	top: 407px;
+	position: absolute;
+	overflow: visible;
+	width: 75px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(25,25,25,1);
+}
+#Text_bc {
+	left: 238px;
+	top: 447px;
+	position: absolute;
+	overflow: visible;
+	width: 37px;
+	height: 24px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(25,25,25,1);
+}
+#Text_bd {
+	left: 642px;
+	top: 328px;
+	position: absolute;
+	overflow: visible;
+	width: 105px;
+	height: 30px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(25,25,25,1);
+}
+#n___be {
+	opacity: 0.94;
+	left: 642px;
+	top: 368px;
+	position: absolute;
+	overflow: visible;
+	width: 85px;
+	height: 24px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(25,25,25,1);
+}
+#n__bf {
+	left: 642px;
+	top: 408px;
+	position: absolute;
+	overflow: visible;
+	width: 75px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(25,25,25,1);
+}
+#Text_bg {
+	left: 642px;
+	top: 448px;
+	position: absolute;
+	overflow: visible;
+	width: 37px;
+	height: 24px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(25,25,25,1);
+}
+#Text_bh {
+	left: 642px;
+	top: 488px;
+	position: absolute;
+	overflow: visible;
+	width: 105px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(25,25,25,1);
+}
+#Text_bi {
+	left: 642px;
+	top: 528px;
+	position: absolute;
+	overflow: visible;
+	width: 53px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(25,25,25,1);
+}
+#Text_bj {
+	left: 1046px;
+	top: 327px;
+	position: absolute;
+	overflow: visible;
+	width: 105px;
+	height: 30px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(25,25,25,1);
+}
+#Text_bk {
+	left: 1450px;
+	top: 328px;
+	position: absolute;
+	overflow: visible;
+	width: 147px;
+	height: 30px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(25,25,25,1);
+}
+#Text_bl {
+	opacity: 0.4;
+	left: 122px;
+	top: 632px;
+	position: absolute;
+	overflow: visible;
+	width: 25px;
+	height: 30px;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(25,25,25,1);
+}
+#Text_bm {
+	left: 1732px;
+	top: 632px;
+	position: absolute;
+	overflow: visible;
+	width: 25px;
+	height: 30px;
+	transition: all 0.30000001192092896s ease-out;
+	--web-animation: fadein 0.30000001192092896s ease-out;
+	--web-action-type: page;
+	--web-action-target: Search_page_Special.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Pretendard;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(25,25,25,1);
+}
