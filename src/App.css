@@ -41,10 +41,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+span{
+    vertical-align: center;
+}
 a:link {
     text-decoration: inherit;
     color: inherit;
-    cursor: auto;
+    cursor: Hand;
 }
 
 a:visited {
@@ -55,7 +58,7 @@ a:visited {
 a:hover{
     text-decoration: inherit;
     color: inherit;
-    cursor: auto;
+    cursor: Hand;
 }
 @font-face {
     font-family: 'Pretendard-Regular';
@@ -73,26 +76,32 @@ body{
 	display: grid;
     grid-template-areas: 
         "header"
+        "line"
         "main"
         "footer";
 }
-#r div:nth-child(2){
+#r div:nth-child(3){
 	grid-area: main;
-    height: 88.35vh;
+    height: 85vh;
 	width: 100%;
 }
-
+#line{
+    border: 1px solid black;
+    margin-left: 15px;
+    margin-right: 18px;
+}
 #header{
 	font-size: 0rem;
 	grid-area: header;
-    height: 7.65vh;
+    height: 11vh;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: flex-end;
+    align-content: stretch;   /*??*/
 }
 
 #title{
+    align-self: center;
     width: 600px;
     height: 65px;
     text-align: left;
@@ -101,14 +110,16 @@ body{
     color: #0A2BA0;
     opacity: 1;
 	cursor: pointer;
+    padding: 5px 0px 0px 15px;
 }
 
-.search{
+#search{
  justify-self: end;
+ padding: 15px 18px 0px 0px
 }
 
 #searchBar{
-    width: 558px;
+    width: 540px;
     height: 58px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
@@ -120,12 +131,10 @@ body{
 }
 
 #searchText{
-    top: 64px;
-    left: 1294px;
     width: 440px;
     height: 26px;
     text-align: left;
-    font: normal normal medium 20px/24px Pretendard;
+    font: normal normal 18px/24px Pretendard;
     letter-spacing: 0px;
     color: #686868;
     opacity: 1;
@@ -163,7 +172,7 @@ header:after{
 
 #footer{
 	grid-area: footer;
-    height: 4vh;
+    height: auto;
 	width: 100%;
 	font-size: 0%;
     display: grid;

@@ -5,7 +5,7 @@ function Footer(props) {
     <footer id='footer'>
           <div id="copyright">&copy; {new Date().getFullYear} KLOPP, all rights reserved.</div>
           <div> </div>
-          <div id="creditTxt"><Link to="/credit"> 제작자 소개</Link></div>
+          <p id="creditTxt"><Link to="/credit"> 제작자 소개</Link></p>
       </footer>);
   }
 
