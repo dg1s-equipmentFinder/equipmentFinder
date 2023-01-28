@@ -1,5 +1,5 @@
 import firebase from 'firebase/compat/app';
-
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
     apiKey: "AIzaSyDYKqcGAJYUu3LwENz2--Uwy-3SItuD4P8",
@@ -11,5 +11,7 @@ const firebaseConfig = {
     measurementId: "G-VDSKYXW0LH",
     databaseURL: "https://klopp-db-default-rtdb.firebaseio.com/"
 }
+const app = firebase.initializeApp(firebaseConfig)
+const auth = getAuth(app);
 
-export default firebase.initializeApp(firebaseConfig);
+export default auth;

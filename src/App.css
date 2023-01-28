@@ -209,7 +209,11 @@ header:after{
 	width: 100%;
 	font-size: 0%;
     display: grid;
+<<<<<<< HEAD
+    grid-template-columns: 280fr 1240fr 150fr 100fr;
+=======
     grid-template-columns: 280fr 1340fr 150fr;
+>>>>>>> 9f70d310d705521d47e9669d719109677bcfa161
     align-items: start;
     align-self: end;
 }
@@ -230,6 +234,18 @@ header:after{
     opacity: 1;
 	cursor: pointer;
 }
+<<<<<<< HEAD
+#auth{
+    text-align: left;
+    text-decoration: underline;
+    font: normal normal normal 15px/18px Roboto;
+    letter-spacing: 0px;
+    color: #686868;
+    opacity: 1;
+	cursor: pointer;
+}
+=======
+>>>>>>> 9f70d310d705521d47e9669d719109677bcfa161
 .no-outline{
     outline: none;
     border-right:0px;
