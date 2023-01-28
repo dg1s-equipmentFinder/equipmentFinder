@@ -5,13 +5,8 @@ function ToLink(){
     window.location.replace(`/search/${keyword}`)
 }
 
-function Header(props) {
-    return (
-      <>
-        <header id='header'>
-          <div id="title"><Link to="/">대구일과학고등학교 기자재 지도</Link></div>
-          <section></section>
-          <section id="search">
+function Form(){
+  return  <section id="search">
             <form id="searchBar" onSubmit={(event)=>{
                 event.preventDefault();
                 ToLink();
@@ -24,7 +19,37 @@ function Header(props) {
                     </svg>
                 </button>
             </form>
-          </section>
+  </section>
+}
+
+function MainButton(){
+  return <form id='mainbutton' onSubmit={(event)=>{
+    event.preventDefault()
+    window.location.replace(`/`)
+  }}>
+      <button type='submit' id='mainbuttontxt'>메인으로</button>
+    </form>
+
+}
+
+function Header(props) {
+  let modetxt;
+    if (props.mode ==='schoolmap'){
+      modetxt='대구일과학고등학교 기자재 지도';
+    }
+    if (props.mode ==='search'){
+      modetxt='대구일과학고등학교 기자재 검색';
+    }
+    if (props.mode ==='credit'){
+      modetxt='제작자 소개';
+    }
+    
+    return (
+      <>
+        <header id='header'>
+          <section id="title">{modetxt}</section>
+          <section></section>
+          {props.mode==="schoolmap" ? <Form></Form> : <MainButton></MainButton>}
       </header>
       <hr id='line'></hr>
       </>

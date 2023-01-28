@@ -9,7 +9,7 @@ function SchoolMap(){
 }
 function Map(){
     return <div id="r">
-    <Header></Header>
+    <Header mode='schoolmap'></Header>
     <SchoolMap />
     <Footer></Footer>
   </div>

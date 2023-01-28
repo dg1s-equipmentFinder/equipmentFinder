@@ -21,7 +21,7 @@ function CreditContent(){
 
 function Credit(){
     return <div id="r">
-    <Header></Header>
+    <Header mode='credit'></Header>
     <CreditContent />
     <Footer></Footer>
   </div>

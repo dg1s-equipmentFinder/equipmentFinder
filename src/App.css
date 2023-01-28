@@ -79,16 +79,17 @@ body{
         "line"
         "main"
         "footer";
+    grid-template-rows: 11vh 15px minmax(83vh, auto) auto;
 }
 #r div:nth-child(3){
 	grid-area: main;
-    height: 85vh;
 	width: 100%;
 }
 #line{
     border: 1px solid black;
-    margin-left: 15px;
-    margin-right: 18px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top:0.3vh;
 }
 #header{
 	font-size: 0rem;
@@ -101,43 +102,48 @@ body{
 }
 
 #title{
-    align-self: center;
-    width: 600px;
-    height: 65px;
+    align-self: stretch;
+    width: 60vw;
+    height: 8.5vh;
     text-align: left;
-    font: normal normal bold 40px/65px "Noto Sans KR";
+    font: normal normal bold 33px "Noto Sans KR";
     letter-spacing: 0px;
     color: #0A2BA0;
     opacity: 1;
-	cursor: pointer;
-    padding: 5px 0px 0px 15px;
+	cursor: default;
+    padding: 3vh 0px 0px 3vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #search{
  justify-self: end;
- padding: 15px 18px 0px 0px
+ padding: 3vh 3vw 0px 0px
 }
 
 #searchBar{
-    width: 540px;
-    height: 58px;
+    width: 34vw;
+    height: 6.5vh;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 26px;
     opacity: 1;
     display: grid;
-    grid-template-columns: 490px 1fr;
+    grid-template-columns: 30vw 4fr;
     place-items: center;
 }
 
 #searchText{
-    width: 440px;
-    height: 26px;
+    margin:0px 0px 0px 3vw;
+    width: 30vw;
+    height: 5vh;
     text-align: left;
     font: normal normal 18px/24px Pretendard;
     letter-spacing: 0px;
     color: #686868;
     opacity: 1;
+
 }
 
 .searchIco{
@@ -145,12 +151,39 @@ body{
 	height: 30px;
 }
 #searchIco{
-    top: 62px;
-    left: 1753px;
     width: 30px;
     height: 30px;
     background: #000000 0% 0% no-repeat padding-box;
     opacity: 0.8;
+}
+
+#mainbuttontxt{
+    width: 15vh;
+    height: 6.5vh;
+    /* UI Properties */
+    background-color: #FFFFFF;
+    border-radius: 26px;
+    border:none;
+    box-shadow: 3px 3px 6px #00000029;
+    font: normal normal 20px Pretendard;
+    letter-spacing: 0px;
+    color: #686868;
+    opacity: 1;
+
+    text-align: center;
+    justify-self: end;
+}
+#mainbuttontxt:hover{
+    background-color: rgb(246, 246, 246)
+}
+#mainbuttontxt:active{
+    background-color: rgb(239, 239, 239)
+}
+
+#mainbutton{
+    margin:3vh 3vw 0px 0px;
+    display:flex;
+    flex-direction: row-reverse;
 }
 
 #headerline{
@@ -178,6 +211,7 @@ header:after{
     display: grid;
     grid-template-columns: 280fr 1340fr 150fr;
     align-items: start;
+    align-self: end;
 }
 
 #copyright{
@@ -206,6 +240,7 @@ header:after{
 }
 
 #credit{
+    margin: 5px 0px 0px 0px;
 	text-align: center;
 	font: normal normal 800 20px/41px Pretendard;
 	display: flex;
