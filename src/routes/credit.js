@@ -14,8 +14,11 @@ function CreditContent(){
         <span>박준혁 <a href="https://www.instagram.com/xracemix_/" rel="noreferrer" target='_blank'><img id='ico' alt="INSTAGRAM" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" /></a></span>
         <h3>NOGADAKKUN</h3>
         <span>빅정후 <a href="https://www.instagram.com/hoguma.i/" rel="noreferrer" target='_blank'><img id='ico' alt="INSTAGRAM" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" /></a></span>
+<<<<<<< HEAD
         <h3>SPECIAL THANKS TO</h3>
         <span>대구일과학고등학교 과학부</span>
+=======
+>>>>>>> 9f70d310d705521d47e9669d719109677bcfa161
         <br />
         <span>문의 : <a href="mailto:teamklopp2023@gmail.com">teamklopp2023@gmail.com</a></span> 
     </div>
