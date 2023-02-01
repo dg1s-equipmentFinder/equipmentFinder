@@ -12,7 +12,7 @@ function SearchContent(){
 
 function Search(){
     return <div id="r">
-    <Header></Header>
+    <Header mode='search'></Header>
     <SearchContent />
     <Footer></Footer>
   </div>
