@@ -255,16 +255,25 @@ header:after{
 #credit{
     margin: 5px 0px 0px 0px;
 	text-align: center;
-	font: normal normal 800 20px/41px Pretendard;
-	display: flex;
-	flex-direction: column;
+	font-size: 0px;
+	display: grid;
+    grid-template-areas: 
+    "titleA titleB"
+    "peopleA peopleB";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5rem 1fr;
 	justify-content: center;
 	align-items: center;
+}
+
+#credit span{
+    font: normal normal 800 20px/41px Pretendard;
 }
 
 #credit h2{
 	font: normal normal 800 35px/41px Pretendard;
 }
+
 #credit h3{
 	font: normal normal 800 25px/41px Pretendard;
 }
@@ -272,6 +281,24 @@ header:after{
 #ico{
 	width: 1.2em;
 	height:1.2em;
+}
+
+#kloppCreditTitle{
+    grid-area: titleA;
+    margin: 0px 0px 0px 0px;
+}
+
+#kloppCreditPeople{
+    grid-area: peopleA;
+}
+
+#scienceCreditTitle{
+    grid-area: titleB;
+    margin: 0px 0px 0px 0px;
+}
+
+#scienceCreditPeople{
+    grid-area: peopleB;
 }
 
 /* school map */
