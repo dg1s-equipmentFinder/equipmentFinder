@@ -1,3 +1,5 @@
+/* css reset */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -67,8 +69,7 @@ a:hover{
     font-style: normal;
 }
 
-
-
+/* web layout */
 body{
     background-color: #F2F2F2 0% 0% no-repeat padding-box;
 }
@@ -91,6 +92,8 @@ body{
     margin-right: 3vw;
     margin-top:0.3vh;
 }
+
+/* header */
 #header{
 	font-size: 0rem;
 	grid-area: header;
@@ -117,6 +120,12 @@ body{
     justify-content: center;
 }
 
+@media screen and (max-width: 800px){
+    #title{
+        font-size: 4.1vw
+    }
+}
+
 #search{
  justify-self: end;
  padding: 3vh 3vw 0px 0px
@@ -130,13 +139,12 @@ body{
     border-radius: 26px;
     opacity: 1;
     display: grid;
-    grid-template-columns: 30vw 4fr;
+    grid-template-columns: 30vw 4vw;
     place-items: center;
 }
 
 #searchText{
-    margin:0px 0px 0px 3vw;
-    width: 30vw;
+    width: 27vw;
     height: 5vh;
     text-align: left;
     font: normal normal 18px/24px Pretendard;
@@ -149,12 +157,6 @@ body{
 .searchIco{
     width: 30px;
 	height: 30px;
-}
-#searchIco{
-    width: 30px;
-    height: 30px;
-    background: #000000 0% 0% no-repeat padding-box;
-    opacity: 0.8;
 }
 
 #mainbuttontxt{
@@ -202,18 +204,23 @@ header:after{
     visibility: hidden;
 }
 
+.no-outline{
+    outline: none;
+    border-right:0px;
+    border-top:0px;
+    border-left:0px;
+    border-bottom:0px;
+    background-color: transparent;
+}
 
+/* footer */
 #footer{
 	grid-area: footer;
     height: auto;
 	width: 100%;
 	font-size: 0%;
     display: grid;
-<<<<<<< HEAD
     grid-template-columns: 280fr 1240fr 150fr 100fr;
-=======
-    grid-template-columns: 280fr 1340fr 150fr;
->>>>>>> 9f70d310d705521d47e9669d719109677bcfa161
     align-items: start;
     align-self: end;
 }
@@ -234,7 +241,6 @@ header:after{
     opacity: 1;
 	cursor: pointer;
 }
-<<<<<<< HEAD
 #auth{
     text-align: left;
     text-decoration: underline;
@@ -244,17 +250,8 @@ header:after{
     opacity: 1;
 	cursor: pointer;
 }
-=======
->>>>>>> 9f70d310d705521d47e9669d719109677bcfa161
-.no-outline{
-    outline: none;
-    border-right:0px;
-    border-top:0px;
-    border-left:0px;
-    border-bottom:0px;
-    background-color: transparent;
-}
 
+/* credit */
 #credit{
     margin: 5px 0px 0px 0px;
 	text-align: center;
@@ -275,4 +272,129 @@ header:after{
 #ico{
 	width: 1.2em;
 	height:1.2em;
+}
+
+/* school map */
+
+#schoolmap{
+    margin: 5vh 5vw 2vh 5vw;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+    "floor"
+    "map"
+    "button";
+    grid-template-rows: 3em 36vw 3.5em;
+    grid-template-columns: 90vw;
+}
+
+#floor{
+    text-align: left;
+    font: normal normal 800 2em Pretendard;
+    letter-spacing: 0px;
+    color: #191919;
+    opacity: 1;
+    padding-left: 0.2em;
+}
+
+#buttonbox{
+    display: grid;
+    grid-template-columns: 6em 6em 6em 6em;
+}
+
+.floorbutton{
+    background: #F2A304 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 6px #00000029;
+    border-radius: 0px 0px 1.3em 1.3em;
+    opacity: 1;
+    text-align: left;
+    font: normal normal 600 1.7em Pretendard;
+    letter-spacing: 0px;
+    color: #F2F2F2;
+    opacity: 1;
+    text-align: center;
+}
+
+.floorbutton:hover{
+    background-color:#edb137;
+}
+
+.floorbutton.active{
+    background-color: #92d2df;
+}
+
+#map1{
+    display:grid;
+    height:36vw;
+    grid-template-rows: 3fr 2fr 3fr;
+    align-self: center;
+}
+
+#map2{
+    display:grid;
+    height:36vw;
+    grid-template-rows: 3fr 2fr 3fr;
+    align-self: center;
+}
+
+#map3{
+    display:grid;
+    height:36vw;
+    grid-template-rows: 3fr 2fr 3fr;
+    align-self: center;    
+}
+
+#map4{
+    display:grid;
+    height:36vw;
+    grid-template-rows: 3fr 2fr 3fr; 
+    align-self: center;   
+}
+
+#mapTop{
+    display:flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+#mapEnd{
+    display:flex;
+    flex-direction: row;
+    align-items: top;  
+}
+
+.mapLab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font: normal normal 600 1.4vw Pretendard;
+    letter-spacing: 0px;
+    color: #F2F2F2;
+    opacity: 1;
+    border: 1px solid #696969;
+}
+
+.lab{
+    background: #92d2df 0% 0% no-repeat padding-box;
+}
+
+.stair{
+    background: #F2E18D 0% 0% no-repeat padding-box;
+    color: #191919;
+}
+
+.etc{
+    background: #BBBBBB 0% 0% no-repeat padding-box;
+}
+
+.blank{
+    border:none;
+    background: none;
+}
+
+.corridor{
+    width:100%;
+    height:100%;
 }

@@ -11,7 +11,7 @@ function LabContent(){
 
 function Lab(){
     return <div id="r">
-    <Header></Header>
+    <Header mode='lab'></Header>
     <LabContent />
     <Footer></Footer>
   </div>

@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-function ToLink(){
+function ToSearchLink(){
     let keyword = document.getElementById('searchText').value;
     window.location.replace(`/search/${keyword}`)
 }
@@ -9,7 +9,7 @@ function Form(){
   return  <section id="search">
             <form id="searchBar" onSubmit={(event)=>{
                 event.preventDefault();
-                ToLink();
+                ToSearchLink();
                 }}>
                 <input type="text" id="searchText" class="no-outline" placeholder="검색하기..." ></input>
                 <button class="searchIco no-outline" type="submit">
@@ -33,9 +33,11 @@ function MainButton(){
 }
 
 function Header(props) {
+  let isSearch;
   let modetxt;
     if (props.mode ==='schoolmap'){
       modetxt='대구일과학고등학교 기자재 지도';
+      isSearch = true;
     }
     if (props.mode ==='search'){
       modetxt='대구일과학고등학교 기자재 검색';
@@ -43,13 +45,17 @@ function Header(props) {
     if (props.mode ==='credit'){
       modetxt='제작자 소개';
     }
-    
+    if (props.mode === 'lab'){
+      modetxt = "대구일과학고등학교 기자재 지도";
+      isSearch = true;
+    }
+
     return (
       <>
         <header id='header'>
           <section id="title">{modetxt}</section>
           <section></section>
-          {props.mode==="schoolmap" ? <Form></Form> : <MainButton></MainButton>}
+          {isSearch ? <Form></Form> : <MainButton></MainButton>}
       </header>
       <hr id='line'></hr>
       </>
