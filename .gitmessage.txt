@@ -14,9 +14,10 @@
 # Release : 릴리즈 배포 버전 기입용
 ######################
 # 본문은 1줄의 blank line 이후에 작성한다.
+# #을 맨 앞에 붙이면 주석 처리되어 commit할 때 적용되지 않는다. 템플릿 내용 안 지워도 되는데 니 내용 앞에 # 달아서 아무도 못 보게 하지 말자.
 
 - hyphen, asterisk를 입력하고 한 칸을 띄어쓰기하면 bullet point(•)로 출력된다
 - Hanging indent를 사용하자
 
 # Issue tracker를 사용한다면, footer에 reference를 다음과 같이 추가하자:
-Resolves: #123
+# Resolves: #123
