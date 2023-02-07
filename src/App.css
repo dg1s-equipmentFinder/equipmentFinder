@@ -331,24 +331,24 @@ header:after{
 }
 
 .floorbutton{
-    background: #F2A304 0% 0% no-repeat padding-box;
+    background: #FFDF66 0% 0% no-repeat padding-box;
     box-shadow: 3px 3px 6px #00000029;
     border-radius: 0px 0px 1.3em 1.3em;
     opacity: 1;
     text-align: left;
     font: normal normal 600 1.7em Pretendard;
     letter-spacing: 0px;
-    color: #F2F2F2;
+    color: #191919;
     opacity: 1;
     text-align: center;
 }
 
 .floorbutton:hover{
-    background-color:#edb137;
+    background-color:#b4e0fc;
 }
 
 .floorbutton.active{
-    background-color: #92d2df;
+    background-color: #94CEF2;
 }
 
 #map1{
@@ -404,11 +404,11 @@ header:after{
 }
 
 .lab{
-    background: #92d2df 0% 0% no-repeat padding-box;
+    background: #94CEF2 0% 0% no-repeat padding-box;
 }
 
 .stair{
-    background: #F2E18D 0% 0% no-repeat padding-box;
+    background: #dbdbdb 0% 0% no-repeat padding-box;
     color: #191919;
 }
 
