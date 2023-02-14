@@ -16,7 +16,7 @@ const AppRouter = () => {
           <Route path="/map"  element={<Map />} />
           <Route path="/credit"  element={<Credit />} />
           <Route path="/search/:searchVal"  element={<Search />} />
-          <Route path="/lab/:labName"  element={<Lab />} />
+          <Route path="/lab/:labName/:floor"  element={<Lab />} />
           <Route path="/closet"  element={<Closet />} />
           <Route path="/explain"  element={<Explain />} />
         </Routes>

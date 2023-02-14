@@ -4,6 +4,23 @@ import AppRouter from './Router.js';
 
 import fb from "../fb.js"
 
+//헤더, closet 등등에 사용하는 버튼
+function OptionButton(props){
+  const sizestyle = {
+    width: props.width,
+    height: props.height,
+    fontSize: props.fontsize
+  }
+  
+  return <form id={props.button_id} onSubmit={(event)=>{
+    event.preventDefault()
+    window.location.replace(`/`)
+  }}>
+      <button type='submit' style={sizestyle} id='optionbuttontxt' class={`${props.background_color}button`}>{props.text}</button>
+    </form>
+
+}
+
 function App() {
   // rtdb 업로드
   /*const labList = {
@@ -45,4 +62,4 @@ function App() {
     )
 }
 
-export default App;
+export {App, OptionButton};

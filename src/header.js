@@ -1,4 +1,6 @@
 import {Link} from "react-router-dom";
+import styled from 'styled-components';
+import {OptionButton} from "./components/App"
 
 function ToSearchLink(){
     let keyword = document.getElementById('searchText').value;
@@ -20,16 +22,6 @@ function Form(){
                 </button>
             </form>
   </section>
-}
-
-function MainButton(){
-  return <form id='mainbutton' onSubmit={(event)=>{
-    event.preventDefault()
-    window.location.replace(`/`)
-  }}>
-      <button type='submit' id='mainbuttontxt'>메인으로</button>
-    </form>
-
 }
 
 function Header(props) {
@@ -55,7 +47,7 @@ function Header(props) {
         <header id='header'>
           <section id="title">{modetxt}</section>
           <section></section>
-          {isSearch ? <Form></Form> : <MainButton></MainButton>}
+          {isSearch ? <Form></Form> : <OptionButton text="메인으로" button_id='mainbutton' background_color='white' width='15vh' height='6.5vh' fontsize='17px'></OptionButton>}
       </header>
       <hr id='line'></hr>
       </>
