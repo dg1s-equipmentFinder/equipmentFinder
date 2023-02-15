@@ -62,12 +62,6 @@ a:hover{
     color: inherit;
     cursor: Hand;
 }
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
 
 /* web layout */
 body{
@@ -446,7 +440,7 @@ header:after{
 
 #labname{
     text-align: left;
-    font: normal normal 800 2em Pretendard;
+    font: normal normal 800 2em "Pretendard";
     letter-spacing: 0px;
     color: #191919;
     opacity: 1;
