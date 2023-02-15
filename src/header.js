@@ -4,7 +4,7 @@ import {OptionButton} from "./components/App"
 
 function ToSearchLink(){
     let keyword = document.getElementById('searchText').value;
-    window.location.replace(`/search/${keyword}`)
+    window.location.replace(`/search/${encodeURIComponent(keyword)}`)
 }
 
 function Form(){
