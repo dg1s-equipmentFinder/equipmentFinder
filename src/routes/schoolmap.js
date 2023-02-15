@@ -15,7 +15,7 @@ function Lab(props){
     if (props.char === "lab"){
         return <StyledLab width={props.width} height={props.height} className={`${props.char} mapFactor`} onClick={()=>{
             console.log(props.floor);
-            window.location.replace(`/lab/${encodeURIComponent(props.labName)}/${encodeURIComponent(props.floor)}`)
+            window.location.replace(`/lab/?labName=${encodeURIComponent(props.labName)}&floor=${encodeURIComponent(props.floor)}`)
         }}>{props.labName}</StyledLab>
     }
     else{

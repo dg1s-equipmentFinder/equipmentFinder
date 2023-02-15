@@ -104,7 +104,9 @@ function LabMap(props){
 }
 
 function LabContent(){
-    const { labName, floor } = useParams()
+    const queryParameters = new URLSearchParams(window.location.search)
+    const labName = queryParameters.get("labName")
+    const floor = queryParameters.get("floor")
     return <div id="inlab">
         <section id="labname">
             <p>{labName}</p>

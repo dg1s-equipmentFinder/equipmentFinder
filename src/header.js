@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import {OptionButton} from "./components/App"
 
 function ToSearchLink(){
-    let keyword = document.getElementById('searchText').value;
-    window.location.replace(`/search/${encodeURIComponent(keyword)}`)
+    let keyword = encodeURIComponent(document.getElementById('searchText').value);
+    window.location.replace(`/search/?keyword=${keyword}`)
 }
 
 function Form(){
