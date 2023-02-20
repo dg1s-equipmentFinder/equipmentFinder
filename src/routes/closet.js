@@ -9,13 +9,15 @@ import { getDatabase, ref, get, child } from "firebase/database";
 
 const dbRef = ref(getDatabase());
 
-function Get_closet_data(floor, labName){
+function Get_closet_data(){
     const queryParameters = new URLSearchParams(window.location.search)
+    const labName = queryParameters.get("labName")
+    const floor = queryParameters.get("floor")
     const i = queryParameters.get("i")
     const j = queryParameters.get("j")
 
     let [List, SetList] = useState([]);
-    get(child(dbRef, `equipment/${floor}/${labName}/detail/closet_container/${i}/data/${j}`)).then((snapshot) => {
+    get(child(dbRef, `equipment/${floor}/${labName}/detail/closet_container/${i}/data/${j}/data`)).then((snapshot) => {
         if (snapshot.exists()) {
           List = SetList(snapshot.val());
         } else {
@@ -24,13 +26,20 @@ function Get_closet_data(floor, labName){
       }).catch((error) => {
         console.error(error);
       });
-      console.log("list", List)
     return List;
 }
 
-function ClosetMap(props){
-    const closetInfo = Get_closet_data(props.floor, props.labName)
-    return <div>{closetInfo["data"]}</div>
+function ClosetMap(){
+  const closetInfo = Get_closet_data()
+  console.log("closetinfo", closetInfo)
+  const names = []
+  for(let i = 0; i < closetInfo.length ; i++){
+    names.push(closetInfo[i]["name"])
+  }
+  console.log(names)
+  return <div>
+  {names.toString().replace(/,/g, '\n')}
+  </div>
 }
 
 function ClosetContent(){
@@ -42,7 +51,7 @@ function ClosetContent(){
         <section id="labname">
             <p>{labName} - {closetNum}</p>
         </section>
-        <ClosetMap floor={floor} labName={labName} closetNum={closetNum}></ClosetMap>
+        <ClosetMap />
     </div>
 }
 

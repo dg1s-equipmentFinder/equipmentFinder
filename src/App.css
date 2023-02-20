@@ -74,7 +74,7 @@ body{
         "line"
         "main"
         "footer";
-    grid-template-rows: 11vh 15px minmax(83vh, auto) auto;
+    grid-template-rows: 11vh 1vh minmax(83vh, auto) auto;
 }
 #r div:nth-child(3){
 	grid-area: main;

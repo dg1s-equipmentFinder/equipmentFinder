@@ -9,11 +9,6 @@ import { getDatabase, ref, get, child } from "firebase/database";
 
 const dbRef = ref(getDatabase());
 
-function list_to_str(arr){
-    let str = ""
-
-}
-
 function Get_lab_data(floor, labName){
     let [List, SetList] = useState([]);
     get(child(dbRef, `equipment/${floor}/${labName}/detail`)).then((snapshot) => {
@@ -65,7 +60,7 @@ function LabMap(props){
     
     let labInfo = Get_lab_data(props.floor, props.labname)
 
-    if (labInfo.length == 0){
+    if (labInfo.length === 0){
         return <section id='labmap'></section>
     }
     else{
@@ -89,14 +84,17 @@ function LabMap(props){
                 closet_container_data[i] = closet_container['data'].map((closet) => {
                     if (closet != null){
                         const closetIndex = closet_container['data'].indexOf(closet)
+                        const names = []
+                        for(let k = 0; k < closet['data'].length; k++){
+                            names.push(closet['data'][k]['name'])
+                        }
                         return( 
                         <MapFactor 
                             width={closet['option']['width']} 
                             height={closet['option']['height']} 
                             closetNum={closet['data']['closetNum']} 
-                            closetContent={closet['data'].toString().replace(/,/g, '\n')} 
-                            onChangeMode={()=>{
-                            window.location.replace(`/closet?labName=${encodeURIComponent(props.labname)}&floor=${encodeURIComponent(props.floor)}&closetNum=${closet['data']['closetNum']}&i=${i}&j=${closetIndex}`)
+                            closetContent={names.slice(0,2).toString().replace(/,/g, '\n')} 
+                            onChangeMode={()=>{ window.location.replace(`/closet?labName=${encodeURIComponent(props.labname)}&floor=${encodeURIComponent(props.floor)}&closetNum=${closet['data']['closetNum']}&i=${i}&j=${closetIndex}`)
                         }}></MapFactor>)
                     }
                 })
