@@ -73,8 +73,12 @@ function LabMap(props){
 
         let closet_container;
         let closet_container_data = [];
-    
-        let closetNumber = 1;
+        let closetNumber
+        if(labInfo['startingNo'] != null ){
+            closetNumber = labInfo['startingNo'];
+        } else{
+            closetNumber = 1
+        }
         for (let i = 1; i < closet_arr.length; i++){
             closet_container = closet_arr[i];
     
