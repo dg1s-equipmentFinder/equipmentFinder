@@ -41,6 +41,9 @@ function Header(props) {
       modetxt = "대구일과학고등학교 기자재 지도";
       isSearch = true;
     }
+    if (props.mode === 'closet'){
+      modetxt = "대구일과학고등학교 기자재 지도";
+    }
 
     return (
       <>

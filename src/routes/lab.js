@@ -51,7 +51,10 @@ function MapFactor(props){
         height: `calc(${props.height}* 100%)`,
     }
     
-    return <section id="mapfactor" className='mapFactor closet' style={style}>
+    return <section id="mapfactor" className='mapFactor closet' style={style} onClick={(event)=>{
+        event.preventDefault();
+        props.onChangeMode();
+    }}>
         <p id='closetNum'>{props.closetNum}</p>
         <p id='closetContent'>{props.closetContent}</p>
     </section>
@@ -80,10 +83,12 @@ function LabMap(props){
                 closetNumber++;
             }
             if (closet_container != null){
-                closet_container_data[i] = closet_container['data'].map((closet, idx) => {
+                closet_container_data[i] = closet_container['data'].map((closet) => {
                     if (closet != null){
                         
-                        return <MapFactor width={closet['option']['width']} height={closet['option']['height']} closetNum={closet['data']['closetNum']} closetContent={closet['data'].toString().replace(/,/g, '\n')} ></MapFactor>
+                        return <MapFactor width={closet['option']['width']} height={closet['option']['height']} closetNum={closet['data']['closetNum']} closetContent={closet['data'].toString().replace(/,/g, '\n')} onChangeMode={()=>{
+                            window.location.replace(`/closet?labName=${encodeURIComponent(props.labname)}&floor=${encodeURIComponent(props.floor)}&closetNum=${closet['data']['closetNum']}`)
+                        }}></MapFactor>
                     }
                 })
                 }
