@@ -73,7 +73,7 @@ function LabMap(props){
     
         let closetNumber = 1;
         for (let i = 1; i < closet_arr.length; i++){
-            closet_container = closet_arr[1];
+            closet_container = closet_arr[i];
     
             for (let j = 0; j < closet_container['data'].length; j++){
                 closet_container['data'][j]['data']['closetNum'] = closetNumber;
