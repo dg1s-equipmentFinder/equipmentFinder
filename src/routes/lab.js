@@ -70,7 +70,6 @@ function LabMap(props){
     }
     else{
         let closet_arr = labInfo['closet_container'];
-
         let closet_container;
         let closet_container_data = [];
         let closetNumber
@@ -89,10 +88,16 @@ function LabMap(props){
             if (closet_container != null){
                 closet_container_data[i] = closet_container['data'].map((closet) => {
                     if (closet != null){
-                        
-                        return <MapFactor width={closet['option']['width']} height={closet['option']['height']} closetNum={closet['data']['closetNum']} closetContent={closet['data'].toString().replace(/,/g, '\n')} onChangeMode={()=>{
-                            window.location.replace(`/closet?labName=${encodeURIComponent(props.labname)}&floor=${encodeURIComponent(props.floor)}&closetNum=${closet['data']['closetNum']}`)
-                        }}></MapFactor>
+                        const closetIndex = closet_container['data'].indexOf(closet)
+                        return( 
+                        <MapFactor 
+                            width={closet['option']['width']} 
+                            height={closet['option']['height']} 
+                            closetNum={closet['data']['closetNum']} 
+                            closetContent={closet['data'].toString().replace(/,/g, '\n')} 
+                            onChangeMode={()=>{
+                            window.location.replace(`/closet?labName=${encodeURIComponent(props.labname)}&floor=${encodeURIComponent(props.floor)}&closetNum=${closet['data']['closetNum']}&i=${i}&j=${closetIndex}`)
+                        }}></MapFactor>)
                     }
                 })
                 }
