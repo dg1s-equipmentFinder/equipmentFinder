@@ -70,7 +70,7 @@ function ClosetContent(){
         <section id="labname">
             <p>{labName} - {closetNum}</p>
             <OptionButton text = "뒤로가기" button_id='labToMainButton' background_color='white' width='5.5em' height='2em' fontsize ='17px' to={-1}></OptionButton>
-            <OptionButton text = "메인으로" button_id='labToMainButton' background_color='white' width='5.5em' height='2em' fontsize ='17px' to='/'></OptionButton>
+            <OptionButton text = "메인으로" button_id='labToMainButton' background_color='yellow' width='5.5em' height='2em' fontsize ='17px' to='/'></OptionButton>
         </section>
         <ClosetMap navigate={navigate} />
     </div>

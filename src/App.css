@@ -171,6 +171,10 @@ body{
     background-color: #FFFFFF;
 }
 
+.yellowbutton{
+    background-color: #ffdf66;
+}
+
 .whitebutton:hover{
     background-color: rgb(246, 246, 246)
 }
