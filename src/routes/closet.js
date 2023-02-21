@@ -29,16 +29,33 @@ function Get_closet_data(){
     return List;
 }
 
+function ClosetFactor(props){
+  const style = {
+    width: `calc(${props.width} * 100%)`,
+    height: `calc(${props.height}* 100%)`,
+  }
+
+  return <section id="equipmentfactor" className='mapFactor closet' style={style} onClick={(event)=>{
+    event.preventDefault();
+    props.onChangeMode();
+  }}>
+    <p id='closetContent'>{props.name}</p>
+  </section>
+}
+
 function ClosetMap(){
   const closetInfo = Get_closet_data()
-  console.log("closetinfo", closetInfo)
-  const names = []
+  let res = []
   for(let i = 0; i < closetInfo.length ; i++){
-    names.push(closetInfo[i]["name"])
+    const name = closetInfo[i]["name"]
+    const height = closetInfo[i]["height"]
+    const width = closetInfo[i]["width"]
+    res.push(<ClosetFactor width={width} height={height} name={name} onChangeMode={()=>{window.location.replace(`/explain?equipmentname=${name}`)}}/>)
   }
-  console.log(names)
-  return <div>
-  {names.toString().replace(/,/g, '\n')}
+  return <div id="closetmap">
+    <div id='equipmentcontainer'>
+  {res}
+  </div>
   </div>
 }
 

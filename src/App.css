@@ -489,3 +489,25 @@ header:after{
     color: #EEEEEE;
     font: normal normal medium 1.2vw Pretendard;
 }
+
+/* closet.js */
+#closetmap{
+    margin-top:8px;
+    height: 100%;
+    width: 26.8vw;
+    position:relative;
+    justify-self: center;
+    display: grid;
+    background-color: #D9D9D9;
+}
+
+#equipmentcontainer{
+    position:absolute;
+    height: 94.2%;
+    width: 87%;
+    justify-self: center;
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
