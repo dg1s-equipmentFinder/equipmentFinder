@@ -1,10 +1,11 @@
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import styled from 'styled-components';
 import {OptionButton} from "./components/App"
 
 function ToSearchLink(){
+  const navigate = useNavigate()
     let keyword = encodeURIComponent(document.getElementById('searchText').value);
-    window.location.replace(`/search?keyword=${keyword}`)
+    navigate(`/search?keyword=${keyword}`)
 }
 
 function Form(){
