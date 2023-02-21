@@ -25,11 +25,9 @@ function Form(){
 }
 
 function Header(props) {
-  let isSearch;
   let modetxt;
     if (props.mode ==='schoolmap'){
       modetxt='대구일과학고등학교 기자재 지도';
-      isSearch = true;
     }
     if (props.mode ==='search'){
       modetxt='대구일과학고등학교 기자재 검색';
@@ -39,7 +37,6 @@ function Header(props) {
     }
     if (props.mode === 'lab'){
       modetxt = "대구일과학고등학교 기자재 지도";
-      isSearch = true;
     }
     if (props.mode === 'closet'){
       modetxt = "대구일과학고등학교 기자재 지도";
@@ -50,7 +47,7 @@ function Header(props) {
         <header id='header'>
           <section id="title">{modetxt}</section>
           <section></section>
-          {isSearch ? <Form></Form> : <OptionButton text="메인으로" button_id='mainbutton' background_color='white' width='15vh' height='6.5vh' fontsize='17px'></OptionButton>}
+          <Form></Form>
       </header>
       <hr id='line'></hr>
       </>

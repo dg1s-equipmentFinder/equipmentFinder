@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 import AppRouter from './Router.js';
 
 import fb from "../fb.js"
+import { useNavigate } from 'react-router';
 
 //헤더, closet 등등에 사용하는 버튼
 function OptionButton(props){
@@ -11,10 +12,11 @@ function OptionButton(props){
     height: props.height,
     fontSize: props.fontsize
   }
-  
+  const navigate = useNavigate()
+  const url = props.to
   return <form id={props.button_id} onSubmit={(event)=>{
     event.preventDefault()
-    window.location.replace(`/`)
+    navigate(url)
   }}>
       <button type='submit' style={sizestyle} id='optionbuttontxt' class={`${props.background_color}button`}>{props.text}</button>
     </form>

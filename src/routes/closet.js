@@ -1,7 +1,7 @@
 import '../App.css';
 import Header from "../header"
 import Footer from '../footer';
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import React, {useState, useEffect} from 'react';
 import { OptionButton } from '../components/App';
 import fb from "../fb.js"
@@ -43,14 +43,15 @@ function ClosetFactor(props){
   </section>
 }
 
-function ClosetMap(){
+function ClosetMap(props){
   const closetInfo = Get_closet_data()
+  const navigate = props.navigate
   let res = []
   for(let i = 0; i < closetInfo.length ; i++){
     const name = closetInfo[i]["name"]
     const height = closetInfo[i]["height"]
     const width = closetInfo[i]["width"]
-    res.push(<ClosetFactor width={width} height={height} name={name} onChangeMode={()=>{window.location.replace(`/explain?equipmentname=${name}`)}}/>)
+    res.push(<ClosetFactor width={width} height={height} name={name} onChangeMode={()=>{navigate(`/explain?equipmentname=${name}`)}}/>)
   }
   return <div id="closetmap">
     <div id='equipmentcontainer'>
@@ -64,11 +65,14 @@ function ClosetContent(){
     const labName = queryParameters.get("labName")
     const floor = queryParameters.get("floor")
     const closetNum = queryParameters.get("closetNum")
+    const navigate = useNavigate()
     return <div id="inlab">
         <section id="labname">
             <p>{labName} - {closetNum}</p>
+            <OptionButton text = "뒤로가기" button_id='labToMainButton' background_color='white' width='5.5em' height='2em' fontsize ='17px' to={-1}></OptionButton>
+            <OptionButton text = "메인으로" button_id='labToMainButton' background_color='white' width='5.5em' height='2em' fontsize ='17px' to='/'></OptionButton>
         </section>
-        <ClosetMap />
+        <ClosetMap navigate={navigate} />
     </div>
 }
 

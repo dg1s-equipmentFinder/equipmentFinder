@@ -1,14 +1,13 @@
 import '../App.css';
 import Header from "../header"
 import Footer from '../footer';
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import React, {useState, useEffect} from 'react';
 import { OptionButton } from '../components/App';
 import fb from "../fb.js"
 import { getDatabase, ref, get, child } from "firebase/database";
 
 const dbRef = ref(getDatabase());
-
 function Get_lab_data(floor, labName){
     let [List, SetList] = useState([]);
     get(child(dbRef, `equipment/${floor}/${labName}/detail`)).then((snapshot) => {
@@ -68,6 +67,7 @@ function LabMap(props){
         let closet_container;
         let closet_container_data = [];
         let closetNumber
+        const navigate = props.navigate
         if(labInfo['startingNo'] != null ){
             closetNumber = labInfo['startingNo'];
         } else{
@@ -94,7 +94,7 @@ function LabMap(props){
                             height={closet['option']['height']} 
                             closetNum={closet['data']['closetNum']} 
                             closetContent={names.slice(0,2).toString().replace(/,/g, '\n')} 
-                            onChangeMode={()=>{ window.location.replace(`/closet?labName=${encodeURIComponent(props.labname)}&floor=${encodeURIComponent(props.floor)}&closetNum=${closet['data']['closetNum']}&i=${i}&j=${closetIndex}`)
+                            onChangeMode={()=>{ navigate(`/closet?labName=${encodeURIComponent(props.labname)}&floor=${encodeURIComponent(props.floor)}&closetNum=${closet['data']['closetNum']}&i=${i}&j=${closetIndex}`)
                         }}></MapFactor>)
                     }
                 })
@@ -119,19 +119,21 @@ function LabContent(){
     const queryParameters = new URLSearchParams(window.location.search)
     const labName = queryParameters.get("labName")
     const floor = queryParameters.get("floor")
+    const navigate = useNavigate()
     return <div id="inlab">
         <section id="labname">
             <p>{labName}</p>
-            <OptionButton text = "메인으로" button_id='labToMainButton' background_color='white' width='5.5em' height='2em' fontsize ='17px'></OptionButton>
+            <OptionButton text = "뒤로가기" button_id='labToMainButton' background_color='white' width='5.5em' height='2em' fontsize ='17px' to={-1}></OptionButton>
+            <OptionButton text = "메인으로" button_id='labToMainButton' background_color='white' width='5.5em' height='2em' fontsize ='17px' to='/'></OptionButton>
         </section>
-        <LabMap labname={labName} floor={floor}></LabMap>
+        <LabMap labname={labName} floor={floor} navigate={navigate}></LabMap>
     </div>
 }
 
 function Lab(){
     return <div id="r">
     <Header mode='lab'></Header>
-    <LabContent />
+    <LabContent/>
     <Footer></Footer>
   </div>
 }

@@ -3,6 +3,7 @@ import Header from "../header"
 import Footer from '../footer';
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components'
+import { useNavigate } from 'react-router-dom';
 
 const StyledLab = styled.section`
     width: ${props => Number(props.width)*5}%;
@@ -10,12 +11,12 @@ const StyledLab = styled.section`
     `
 
 function Lab(props){
-    
+    const navigate = useNavigate()
     // char: lab, blank, stair, etc
     if (props.char === "lab"){
         return <StyledLab width={props.width} height={props.height} className={`${props.char} mapFactor`} onClick={()=>{
             console.log(props.floor);
-            window.location.replace(`/lab?labName=${encodeURIComponent(props.labName)}&floor=${encodeURIComponent(props.floor)}`)
+            navigate(`/lab?labName=${encodeURIComponent(props.labName)}&floor=${encodeURIComponent(props.floor)}`)
         }}>{props.labName}</StyledLab>
     }
     else{

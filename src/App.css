@@ -447,7 +447,7 @@ header:after{
     padding-left: 0.2em;
 
     display: grid;
-    grid-template-columns: auto 5.5em;
+    grid-template-columns: auto 4em 4em;
     grid-template-rows: 100%;
 }
 
