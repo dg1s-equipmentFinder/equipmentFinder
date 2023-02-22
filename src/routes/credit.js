@@ -1,6 +1,7 @@
 import '../App.css';
 import Header from "../header"
 import Footer from '../footer';
+import React from 'react';
 
 function CreditContent(){
     return <div id='credit'>
@@ -35,4 +36,4 @@ function Credit(){
     <Footer></Footer>
   </div>
 }
-export default Credit
+export default React.memo(Credit)

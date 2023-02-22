@@ -8,19 +8,6 @@ import fb from "../fb.js"
 import { getDatabase, ref, get, child } from "firebase/database";
 
 const dbRef = ref(getDatabase());
-function Get_lab_data(floor, labName){
-    let [List, SetList] = useState([]);
-    get(child(dbRef, `equipment/${floor}/${labName}/detail`)).then((snapshot) => {
-        if (snapshot.exists()) {
-          List = SetList(snapshot.val());
-        } else {
-          console.log("No data available");
-        }
-      }).catch((error) => {
-        console.error(error);
-      });
-    return List;
-}
 
 //absolute -> 퍼센트로 위치 지정
 function MapContainer(props){
@@ -56,20 +43,29 @@ function MapFactor(props){
 
 //relative
 function LabMap(props){
-    
-    let labInfo = Get_lab_data(props.floor, props.labname)
-
-    if (labInfo.length === 0){
+    const [List, SetList] = useState([]);
+    useEffect(() => {
+        get(child(dbRef, `equipment/${props.floor}/${props.labname}/detail`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                SetList(snapshot.val());
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+    }, []);
+    if (List.length === 0){
         return <section id='labmap'></section>
     }
     else{
-        let closet_arr = labInfo['closet_container'];
+        let closet_arr = List['closet_container'];
         let closet_container;
         let closet_container_data = [];
         let closetNumber
         const navigate = props.navigate
-        if(labInfo['startingNo'] != null ){
-            closetNumber = labInfo['startingNo'];
+        if(List['startingNo'] != null ){
+            closetNumber = List['startingNo'];
         } else{
             closetNumber = 1
         }
@@ -103,7 +99,7 @@ function LabMap(props){
         }
     
         return <section id="labmap">
-            {labInfo['closet_container'].map(function(closet_container, idx){
+            {List['closet_container'].map(function(closet_container, idx){
                 if (closet_container != null){
                     return (<MapContainer xpos={closet_container['option']['xpos']} ypos={closet_container['option']['ypos']} width={closet_container['option']['width']} height={closet_container['option']['height']} direction={closet_container['option']['direction']} wrap={closet_container['option']['wrap']}>
                         {closet_container_data[idx]}
@@ -138,4 +134,4 @@ function Lab(){
   </div>
 }
 
-export default Lab
+export default React.memo(Lab)

@@ -2,6 +2,7 @@ import '../App.css';
 import Header from "../header"
 import Footer from '../footer';
 import { useLocation, useSearchParams } from "react-router-dom"
+import React from 'react';
 
 
 
@@ -21,4 +22,4 @@ function Search(){
   </div>
 }
 
-export default Search
+export default React.memo(Search)

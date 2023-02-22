@@ -176,4 +176,4 @@ function Map(){
     <Footer></Footer>
   </div>
 }
-export default Map
+export default React.memo(Map)

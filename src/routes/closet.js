@@ -9,24 +9,35 @@ import { getDatabase, ref, get, child } from "firebase/database";
 
 const dbRef = ref(getDatabase());
 
-function Get_closet_data(){
-    const queryParameters = new URLSearchParams(window.location.search)
-    const labName = queryParameters.get("labName")
-    const floor = queryParameters.get("floor")
-    const i = queryParameters.get("i")
-    const j = queryParameters.get("j")
+function Get_closet_data() {
+  const queryParameters = new URLSearchParams(window.location.search);
+  const labName = queryParameters.get("labName");
+  const floor = queryParameters.get("floor");
+  const i = queryParameters.get("i");
+  const j = queryParameters.get("j");
 
-    let [List, SetList] = useState([]);
-    get(child(dbRef, `equipment/${floor}/${labName}/detail/closet_container/${i}/data/${j}/data`)).then((snapshot) => {
+  const [list, setList] = useState([]);
+
+  useEffect(() => {
+    const dbRef = ref(getDatabase());
+    const equipmentRef = child(dbRef, `equipment/${floor}/${labName}/detail/closet_container/${i}/data/${j}/data`);
+
+    get(equipmentRef)
+      .then((snapshot) => {
         if (snapshot.exists()) {
-          List = SetList(snapshot.val());
+          setList(snapshot.val());
         } else {
           console.log("No data available");
         }
-      }).catch((error) => {
+      })
+      .catch((error) => {
         console.error(error);
       });
-    return List;
+  }, [labName, floor, i, j]);
+
+  console.log("list", list);
+
+  return list;
 }
 
 function ClosetFactor(props){
@@ -84,4 +95,4 @@ function Closet(){
   </div>
 }
 
-export default Closet
+export default React.memo(Closet)
