@@ -4,10 +4,10 @@ import Footer from '../footer';
 import { useNavigate, useParams } from "react-router-dom"
 import React, {useState, useEffect} from 'react';
 import { OptionButton } from '../components/App';
-import fb from "../fb.js"
+import {db} from "../fb.js"
 import { getDatabase, ref, get, child } from "firebase/database";
 
-const dbRef = ref(getDatabase());
+const dbRef = ref(db);
 
 function Get_closet_data() {
   const queryParameters = new URLSearchParams(window.location.search);

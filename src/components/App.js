@@ -1,8 +1,6 @@
 import '../App.css';
 import React, {useState, useEffect} from 'react';
 import AppRouter from './Router.js';
-
-import fb from "../fb.js"
 import { useNavigate } from 'react-router';
 
 //헤더, closet 등등에 사용하는 버튼

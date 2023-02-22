@@ -4,10 +4,10 @@ import Footer from '../footer';
 import { useParams, useNavigate } from "react-router-dom"
 import React, {useState, useEffect} from 'react';
 import { OptionButton } from '../components/App';
-import fb from "../fb.js"
+import {db} from "../fb.js"
 import { getDatabase, ref, get, child } from "firebase/database";
 
-const dbRef = ref(getDatabase());
+const dbRef = ref(db);
 
 //absolute -> 퍼센트로 위치 지정
 function MapContainer(props){
