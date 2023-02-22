@@ -6,13 +6,14 @@ import Map from '../routes/schoolmap.js'
 import Search from '../routes/search.js'
 import Credit from '../routes/credit.js';
 import Closet from '../routes/closet.js'
+import StartPage from '../routes/start_page.js'
 import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 
 const AppRouter = () => {
     return (
       <Router>
         <Routes>
-          <Route path="/"  element={<Map />} />
+          <Route path="/"  element={<StartPage />} />
           <Route path="/map"  element={<Map />} />
           <Route path="/credit"  element={<Credit />} />
           <Route path="/search"  element={<Search />} />
