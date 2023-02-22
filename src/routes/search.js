@@ -1,7 +1,7 @@
 import '../App.css';
 import Header from "../header"
 import Footer from '../footer';
-import { useLocation, useSearchParams } from "react-router-dom"
+import { useLocation, useNavigate, useSearchParams } from "react-router-dom"
 import React from 'react';
 
 
@@ -15,8 +15,9 @@ function SearchContent(){
 }
 
 function Search(){
+    const navigate = useNavigate()
     return <div id="r">
-    <Header mode='search'></Header>
+    <Header mode='search' navigate={navigate}></Header>
     <SearchContent />
     <Footer></Footer>
   </div>

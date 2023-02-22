@@ -2,6 +2,7 @@ import '../App.css';
 import Header from "../header"
 import Footer from '../footer';
 import React from 'react';
+import { useNavigate } from 'react-router';
 
 function CreditContent(){
     return <div id='credit'>
@@ -30,8 +31,9 @@ function CreditContent(){
 }
 
 function Credit(){
+    const navigate = useNavigate()
     return <div id="r">
-    <Header mode='credit'></Header>
+    <Header mode='credit' navigate={useNavigate}></Header>
     <CreditContent />
     <Footer></Footer>
   </div>

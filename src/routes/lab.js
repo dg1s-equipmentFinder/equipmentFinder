@@ -111,11 +111,11 @@ function LabMap(props){
     
 }
 
-function LabContent(){
+function LabContent(props){
     const queryParameters = new URLSearchParams(window.location.search)
     const labName = queryParameters.get("labName")
     const floor = queryParameters.get("floor")
-    const navigate = useNavigate()
+    const navigate = props.navigate
     return <div id="inlab">
         <section id="labname">
             <p>{labName}</p>
@@ -127,9 +127,10 @@ function LabContent(){
 }
 
 function Lab(){
+    const navigate = useNavigate()
     return <div id="r">
-    <Header mode='lab'></Header>
-    <LabContent/>
+    <Header mode='lab' navigate={navigate}></Header>
+    <LabContent navigate={navigate}/>
     <Footer></Footer>
   </div>
 }

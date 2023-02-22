@@ -71,12 +71,12 @@ function ClosetMap(props){
   </div>
 }
 
-function ClosetContent(){
+function ClosetContent(props){
     const queryParameters = new URLSearchParams(window.location.search)
     const labName = queryParameters.get("labName")
     const floor = queryParameters.get("floor")
     const closetNum = queryParameters.get("closetNum")
-    const navigate = useNavigate()
+    const navigate = props.navigate
     return <div id="inlab">
         <section id="labname">
             <p>{labName} - {closetNum}</p>
@@ -88,9 +88,10 @@ function ClosetContent(){
 }
 
 function Closet(){
+  const navigate = useNavigate()
     return <div id="r">
-    <Header mode="closet"></Header>
-    <ClosetContent />
+    <Header mode="closet" navigate={navigate}></Header>
+    <ClosetContent navigate={navigate}/>
     <Footer></Footer>
   </div>
 }

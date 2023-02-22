@@ -8,11 +8,14 @@ function ToSearchLink(){
     navigate(`/search?keyword=${keyword}`)
 }
 
-function Form(){
+function Form(props){
+
+  let navigate = props.navigate
   return  <section id="search">
             <form id="searchBar" onSubmit={(event)=>{
                 event.preventDefault();
-                ToSearchLink();
+                let keyword = encodeURIComponent(document.getElementById('searchText').value);
+                navigate(`/search?keyword=${keyword}`)
                 }}>
                 <input type="text" id="searchText" class="no-outline" placeholder="검색하기..." ></input>
                 <button class="searchIco no-outline" type="submit">
@@ -26,6 +29,7 @@ function Form(){
 }
 
 function Header(props) {
+  const navigate = props.navigate
   let modetxt;
     if (props.mode ==='schoolmap'){
       modetxt='대구일과학고등학교 기자재 지도';
@@ -48,7 +52,7 @@ function Header(props) {
         <header id='header'>
           <section id="title">{modetxt}</section>
           <section></section>
-          <Form></Form>
+          <Form navigate={navigate}></Form>
       </header>
       <hr id='line'></hr>
       </>

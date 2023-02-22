@@ -11,7 +11,7 @@ const StyledLab = styled.section`
     `
 
 function Lab(props){
-    const navigate = useNavigate()
+    const navigate = props.navigate
     // char: lab, blank, stair, etc
     if (props.char === "lab"){
         return <StyledLab width={props.width} height={props.height} className={`${props.char} mapFactor`} onClick={()=>{
@@ -26,6 +26,7 @@ function Lab(props){
 
 
 function FloorMap(props){
+    const navigate = props.navigate
     const floormap_list = [
         0,
         {
@@ -127,13 +128,13 @@ function FloorMap(props){
     return <section id={`floormap${props.floor}`}>
         <section id='floormapTop'>
             { (floormap_list[props.floor].fmapTop).map(function(labObj){
-                return (<Lab char={labObj.char} width={labObj.width} height={labObj.height} labName={labObj.labName} floor={props.floor}></Lab>)
+                return (<Lab char={labObj.char} width={labObj.width} height={labObj.height} labName={labObj.labName} floor={props.floor} navigate={navigate}></Lab>)
             })}
         </section>
         <Lab char='etc' width={floormap_list[props.floor].corridor_width} height='3'></Lab>
         <section id='floormapEnd'>
             { (floormap_list[props.floor].fmapEnd).map(function(labObj){
-                return (<Lab char={labObj.char} width={labObj.width} height={labObj.height} labName={labObj.labName} floor={props.floor}></Lab>)
+                return (<Lab char={labObj.char} width={labObj.width} height={labObj.height} labName={labObj.labName} floor={props.floor} navigate={navigate}></Lab>)
             })}
         </section>
     </section>
@@ -147,12 +148,12 @@ function ChangeButton(priorFloor, curFloor, setFloor){
     currentButton.classList.add("active");
 }
 
-function SchoolMap(){
+function SchoolMap(props){
     const [floor, setFloor] = useState(1);
-
+    const navigate = props.navigate
     return <div id='schoolmap'>
         <section id="floor">{`${floor}F`}</section>
-        <FloorMap floor={floor}></FloorMap>
+        <FloorMap floor={floor} navigate={navigate}></FloorMap>
         <section id="buttonbox">
             <button id="button1" class="floorbutton no-outline active" onClick={()=>{
                 ChangeButton(floor, 1, setFloor);
@@ -170,9 +171,10 @@ function SchoolMap(){
     </div>
 }
 function Map(){
+    const navigate = useNavigate()
     return <div id="r">
-    <Header mode='schoolmap'></Header>
-    <SchoolMap />
+    <Header mode='schoolmap' navigate={navigate}></Header>
+    <SchoolMap navigate={navigate}/>
     <Footer></Footer>
   </div>
 }
