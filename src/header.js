@@ -34,16 +34,19 @@ function Header(props) {
     if (props.mode ==='schoolmap'){
       modetxt='대구일과학고등학교 기자재 지도';
     }
-    if (props.mode ==='search'){
+    else if (props.mode ==='search'){
       modetxt='대구일과학고등학교 기자재 검색';
     }
-    if (props.mode ==='credit'){
+    else if (props.mode ==='credit'){
       modetxt='제작자 소개';
     }
-    if (props.mode === 'lab'){
+    else if (props.mode === 'lab'){
       modetxt = "대구일과학고등학교 기자재 지도";
     }
-    if (props.mode === 'closet'){
+    else if (props.mode === 'closet'){
+      modetxt = "대구일과학고등학교 기자재 지도";
+    }
+    else if (props.mode === 'explain'){
       modetxt = "대구일과학고등학교 기자재 지도";
     }
 

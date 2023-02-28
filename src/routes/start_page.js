@@ -12,7 +12,7 @@ function StartPage(){
     const [time, setTime] = useState(true);
 
     useEffect(() =>{
-        // let timer = setTimeout(() => {setTime(!time)}, 2000)
+        let timer = setTimeout(() => {setTime(!time)}, 2000)
     })
 
     if (time === false){

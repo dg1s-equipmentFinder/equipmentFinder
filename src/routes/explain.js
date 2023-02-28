@@ -14,7 +14,7 @@ function ExplainContent(){
 function Explain(){
     const navigate = useNavigate()
     return <div id="r">
-    <Header navigate={navigate}></Header>
+    <Header mode = "explain" navigate={navigate}></Header>
     <ExplainContent />
     <Footer></Footer>
   </div>
