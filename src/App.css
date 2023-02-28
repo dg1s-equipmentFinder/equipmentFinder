@@ -62,7 +62,37 @@ a:hover{
     color: inherit;
     cursor: Hand;
 }
+/* loading page */
+#startPage{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url('./loading_background.png');
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#loadingMsg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
+#dg1s_logoimg{
+    width :130px;
+    height:130px;
+}
+#loadingTxt{
+    /* UI Properties */
+text-align: left;
+font: normal normal bold 60px/116px Noto Sans CJK KR;
+letter-spacing: 0px;
+color: #F2F2F2;
+opacity: 1;
+}
 /* web layout */
 body{
     background-color: #F2F2F2 0% 0% no-repeat padding-box;
