@@ -8,6 +8,7 @@ import { initializeApp } from "firebase/app";
 import { getDatabase, ref, get, child, query, orderByChild, orderByValue, onValue, orderByKey, startAt, endAt } from "firebase/database";
 const jsondata = require('../data/roomdata_sample.json')
 
+
 function getdata(keyword) {
     const search = keyword.toString()
     const app = initializeApp(firebaseConfig);
