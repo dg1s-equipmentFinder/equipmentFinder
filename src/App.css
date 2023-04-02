@@ -546,6 +546,8 @@ header:after{
     align-items:flex-start;
 }
 
+/*search*/
+
 .search_mainBox > .mainBox_div {
     display: flex;
     flex-wrap: wrap;
@@ -587,4 +589,11 @@ header:after{
 }
 .h90{
     height: 90%;
+}
+
+#searchToMainButton{
+    margin:0px 0px 0px 0px;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
