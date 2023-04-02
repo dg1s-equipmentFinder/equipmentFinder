@@ -49,18 +49,34 @@ function Header(props) {
     else if (props.mode === 'explain'){
       modetxt = "대구일과학고등학교 기자재 지도";
     }
+    
+    if (props.mode === 'search'){
+      return (
+        <>
+          <header id='header'>
+            <section id="title">{modetxt}</section>
+            <section></section>
+            <OptionButton text = "메인으로" button_id='searchToMainButton' background_color='yellow' width='5.5em' height='2em' fontsize ='17px' to='/map'></OptionButton>
+        </header>
+        <hr id='line'></hr>
+        </>
+        
+        );      
+    }
+    else{
+      return (
+        <>
+          <header id='header'>
+            <section id="title">{modetxt}</section>
+            <section></section>
+            <Form navigate={navigate}></Form>
+        </header>
+        <hr id='line'></hr>
+        </>
+        
+        ); 
+    }
 
-    return (
-      <>
-        <header id='header'>
-          <section id="title">{modetxt}</section>
-          <section></section>
-          <Form navigate={navigate}></Form>
-      </header>
-      <hr id='line'></hr>
-      </>
-      
-      );
   }
   
 export default Header
