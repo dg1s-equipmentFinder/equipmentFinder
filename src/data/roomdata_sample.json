@@ -1,0 +1,50 @@
+{
+    "1": {
+        "roomtitle": 1,
+        "productitle": "피펫"
+    },
+    "2": {
+        "roomtitle": 1,
+        "productitle": "ㅇㄹ"
+    },
+    "3": {
+        "roomtitle": 2,
+        "productitle": "홀피펫"
+    },
+    "4": {
+        "roomtitle": 2,
+        "productitle": "ㅇㄹ"
+    },
+    "5": {
+        "roomtitle": 3,
+        "productitle": "피펫"
+    },
+    "6": {
+        "roomtitle": 3,
+        "productitle": "ㅇㄹ"
+    },
+    "7": {
+        "roomtitle": 4,
+        "productitle": "피펫"
+    },
+    "8": {
+        "roomtitle": 4,
+        "productitle": "ㅇㄹ"
+    },
+    "9": {
+        "roomtitle": 5,
+        "productitle": "피펫"
+    },
+    "10": {
+        "roomtitle": 5,
+        "productitle": "ㅇㄹ"
+    },
+    "11": {
+        "roomtitle": 6,
+        "productitle": "피펫"
+    },
+    "12": {
+        "roomtitle": 6,
+        "productitle": "ㅇㄹ"
+    }
+}
