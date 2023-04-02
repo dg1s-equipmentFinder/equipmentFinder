@@ -8,7 +8,7 @@ function ToSearchLink(){
     navigate(`/search?keyword=${keyword}`)
 }
 
-function Form(props){
+export function Form(props){
 
   let navigate = props.navigate
   return  <section id="search">
