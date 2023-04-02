@@ -1,0 +1,1064 @@
+{
+  "둥근바닥플라스크": [
+    {
+      "closet_num": 0,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 0,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 5,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 6,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 7,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 8,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 9,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 0,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 5,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 6,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 7,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 8,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 9,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 0,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 2,
+      "lab_name": "생물 준비실"
+    }
+  ],
+  "매스피펫": [
+    {
+      "closet_num": 0,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 0,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 5,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 6,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 7,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 8,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 9,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 0,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 5,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 6,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 7,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 8,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 9,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 0,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 1,
+      "lab_name": "생물 준비실"
+    }
+  ],
+  "민건": [
+    {
+      "closet_num": 0,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    }
+  ],
+  "피펫": [
+    {
+      "closet_num": 0,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 0,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 5,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 6,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 7,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 8,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 9,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 0,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 5,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 6,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 7,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 8,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 9,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 0,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 3,
+      "lab_name": "생물 준비실"
+    }
+  ],
+  "피펫대": [
+    {
+      "closet_num": 0,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 0,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 5,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 6,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 7,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 8,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 9,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 0,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 5,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 6,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 7,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 8,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 9,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 0,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 4,
+      "lab_name": "생물 준비실"
+    }
+  ],
+  "홀피펫": [
+    {
+      "closet_num": 1,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 1,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 0,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 5,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 6,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 7,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 8,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 9,
+      "container_num": 2,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 0,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 5,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 6,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 7,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 8,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 9,
+      "container_num": 3,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 0,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 1,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 2,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 3,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    },
+    {
+      "closet_num": 4,
+      "container_num": 4,
+      "floor": 2,
+      "item_num": 0,
+      "lab_name": "생물 준비실"
+    }
+  ]
+}
