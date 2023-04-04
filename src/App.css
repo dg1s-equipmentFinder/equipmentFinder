@@ -570,6 +570,12 @@ header:after{
     padding: 8px 16px;
 
 }
+.search_mainBox{
+    margin-left:5vw;
+    margin-top: 5vh;
+    width: 90vw;
+
+}
 .search_mainBox .room_title {
   display: flex;
   flex: 1;
