@@ -106,10 +106,9 @@ body{
         "footer";
     grid-template-rows: 11vh 1vh minmax(83vh, auto) auto;
 }
-#r div:nth-child(3){
-	grid-area: main;
-	width: 100%;
-}
+
+
+
 #line{
     border: 1px solid black;
     margin-left: 3vw;
@@ -554,10 +553,12 @@ header:after{
     width: 100%;
     justify-content: center;
     padding: 8px 0;
-    background-color: antiquewhite;
     align-content: flex-start;
-}
-.mainBox_div > input{
+    opacity: 1 !important;
+    
+  }
+
+  .mainBox_div > input {
     width: 80% !important;
     border: solid 1px #333;
     background: #ffffff 0% 0% no-repeat padding-box;
@@ -568,38 +569,65 @@ header:after{
     grid-template-columns: 30vw 4vw;
     place-items: center;
     padding: 8px 16px;
+  }
 
-}
-.search_mainBox{
-    margin-left:5vw;
+  .search_mainBox {
+    margin-left: 5vw;
     margin-top: 5vh;
     width: 90vw;
+    background: #f8d6ac 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 20px;
 
-}
-.search_mainBox .room_title {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  flex-direction: column;
-  /* align-content: center; */
-  align-items: center;
-}
-.room_title > .sub_title {
-}
 
-.borderBot{
+
+
+  }
+
+  .search_mainBox .room_title {
+    display: flex;
+    flex: 1;
+    justify-content: top;
+    flex-direction: column;
+    /* align-content: center; */
+    align-items: center;
+    font: normal normal bold 24px/29px Pretendard;
+    letter-spacing: 0px;
+    color: #191919;
+    opacity: 1;
+  }
+
+  .room_title > .sub_title {
+    font: normal normal normal 20px/24px Pretendard;
+    letter-spacing: 0px;
+    color: #191919;
+    opacity: 0.94;
+  }
+  
+  .borderBot {
     border-bottom: solid 2px #707070;
-}
-.h10{
-    height: 10%;
-}
-.h90{
-    height: 90%;
-}
+  }
 
-#searchToMainButton{
-    margin:3vh 3vw 0px 0px;
-    display:flex;
+  .h10 {
+    height: 9vh;
+  }
+
+  .h90 {
+    height: 81vh;
+  }
+  .itembtn {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: left;
+    font: normal normal 300 20px/24px Pretendard;
+    letter-spacing: 0px;
+    color: #919191;
+    opacity: 1;
+  }
+  
+  #searchToMainButton {
+    margin: 3vh 3vw 0px 0px;
+    display: flex;
     flex-direction: row-reverse;
     align-items: center;
-}
+  }
