@@ -1,10 +1,10 @@
 import '../App.css';
-import Header from "../header"
+import Header from "../header";
 import Footer from '../footer';
-import { useParams, useNavigate } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom";
 import React, {useState, useEffect} from 'react';
 import { OptionButton } from '../components/App';
-import {db} from "../fb.js"
+import {db} from "../fb.js";
 import { getDatabase, ref, get, child } from "firebase/database";
 
 const dbRef = ref(db);
