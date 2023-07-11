@@ -69,7 +69,7 @@ function SearchContent(props) {
     const navigate = props.navigate
     const onClickitemButton=(value)=>{
         console.log(value)
-        navigate(`/closet?labName=${encodeURIComponent(value['lab_name'])}&floor=${encodeURIComponent(value['floor'])}&closetNum=${encodeURIComponent(value['closet_num'])}&i=${encodeURIComponent(value['container_num'])}&j=${encodeURIComponent(value['item_num'])}`)
+        navigate(`/closet?labName=${encodeURIComponent(value['lab_name'])}&floor=${encodeURIComponent(value['floor'])}&closetNum=${encodeURIComponent(value['closet_num'])}&i=${encodeURIComponent(value['container_num(i)'])}&j=${encodeURIComponent(value['closet_order_in_container(j)'])}`)
     }
     //http://localhost:3000/closet?labName=%EC%83%9D%EB%AC%BC%20%EC%A4%80%EB%B9%84%EC%8B%A4&floor=2&closetNum=20&i=2&j=4
     //http://localhost:3000/lab?labName=%EC%83%9D%EB%AC%BC%20%EC%A4%80%EB%B9%84%EC%8B%A4&floor=2&closetNum=4&i=4&j=3

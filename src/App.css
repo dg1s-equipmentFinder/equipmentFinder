@@ -684,3 +684,12 @@ border-radius: 20px;
     background-color: #ffffff;
     border: 2px solid #D9D9D9;
 }
+
+
+/* credit */
+#creditToMainButton {
+    margin: 3vh 3vw 0px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
