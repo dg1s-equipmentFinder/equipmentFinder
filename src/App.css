@@ -685,6 +685,14 @@ border-radius: 20px;
     border: 2px solid #D9D9D9;
 }
 
+/* explain */
+.explainTitle {
+    font: normal normal bold 33px "Noto Sans KR";
+}
+
+.explainContent {
+    font: normal normal bold 33px "Noto Sans KR";
+}
 
 /* credit */
 #creditToMainButton {
