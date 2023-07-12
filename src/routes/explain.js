@@ -38,10 +38,13 @@ function MapFactor(props){
 
 function ExplainMap(props){
     const [List, SetList] = useState([]);
+
     useEffect(() => {
-        get(child(dbRef, `equipment/${props.floor}/${props.explainname}/detail`)).then((snapshot) => {
+        console.log(props.explainname)
+        get(child(dbRef, `searchdb/${props.explainname}/description`)).then((snapshot) => {
             if (snapshot.exists()) {
                 SetList(snapshot.val());
+                console.log(List)
             } else {
                 console.log("No data available");
             }
@@ -53,53 +56,10 @@ function ExplainMap(props){
         return <section id='explainmap'></section>
     }
     else{
-        let closet_arr = List['closet_container'];
-        let closet_container;
-        let closet_container_data = [];
-        let closetNumber
-        const navigate = props.navigate
-        if(List['startingNo'] != null ){
-            closetNumber = List['startingNo'];
-        } else{
-            closetNumber = 1
-        }
-        for (let i = 1; i < closet_arr.length; i++){
-            closet_container = closet_arr[i];
-    
-            for (let j = 0; j < closet_container['data'].length; j++){
-                closet_container['data'][j]['data']['closetNum'] = closetNumber;
-                closetNumber++;
-            }
-            if (closet_container != null){
-                closet_container_data[i] = closet_container['data'].map((closet) => {
-                    if (closet != null){
-                        const closetIndex = closet_container['data'].indexOf(closet)
-                        const names = []
-                        for(let k = 0; k < closet['data'].length; k++){
-                            names.push(closet['data'][k]['name'])
-                        }
-                        return( 
-                        <MapFactor 
-                            width={closet['option']['width']} 
-                            height={closet['option']['height']} 
-                            closetNum={closet['data']['closetNum']} 
-                            closetContent={names.slice(0,2).toString().replace(/,/g, '\n')} 
-                            onChangeMode={()=>{ navigate(`/closet?explainName=${encodeURIComponent(props.explainname)}&floor=${encodeURIComponent(props.floor)}&closetNum=${closet['data']['closetNum']}&i=${i}&j=${closetIndex}`)
-                        }}></MapFactor>)
-                    }
-                })
-                }
-                
-        }
+        let description = List['text']
     
         return <section id="explainmap">
-            {List['closet_container'].map(function(closet_container, idx){
-                if (closet_container != null){
-                    return (<MapContainer xpos={closet_container['option']['xpos']} ypos={closet_container['option']['ypos']} width={closet_container['option']['width']} height={closet_container['option']['height']} direction={closet_container['option']['direction']} wrap={closet_container['option']['wrap']}>
-                        {closet_container_data[idx]}
-                    </MapContainer>)
-                }
-            })}
+            <p>{description}</p>
         </section>
     }
 }
@@ -107,7 +67,7 @@ function ExplainMap(props){
 
 function ExplainContent(props){
     const queryParameters = new URLSearchParams(window.location.search)
-    const explainName = queryParameters.get("explainName")
+    const explainName = queryParameters.get("equipmentname")
     const floor = queryParameters.get("floor")
     const navigate = props.navigate
     return <div id="inexplain">
