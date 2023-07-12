@@ -63,6 +63,18 @@ function Header(props) {
         
         );      
     }
+    if (props.mode === 'credit'){
+      return (
+        <>
+          <header id='header'>
+            <section id='title'>{modetxt}</section>
+            <section></section>
+            <OptionButton text = "메인으로" button_id='creditToMainButton' background_color='yellow' width='5.5em' height='2em' fontsize ='17px' to='/map'></OptionButton>
+          </header>
+          <hr id='line'></hr>
+        </>
+      )
+    }
     else{
       return (
         <>
