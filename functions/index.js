@@ -2,9 +2,11 @@ const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 admin.initializeApp();
 
-exports.modifySearchdb = functions.region("asia-northeast3").database.ref("/equipment").onWrite((change, context) => {
+exports.modifySearchdb = functions.region("asia-northeast3").database.ref("/").onWrite((change, context) => {
     const db = admin.database();
     const afterData = change.after.val(); // Data after the change
+    const equipment = afterData["equipment"];
+    const searchdb_origin = afterData["searchdb"]
     // Compare the before and after data to determine what changed
     const searchdb = {};
     let floor_data;
@@ -15,7 +17,7 @@ exports.modifySearchdb = functions.region("asia-northeast3").database.ref("/equi
     let closet_num;
     let item_data;
     for (let floor = 1; floor <=4; floor++) {
-        floor_data = afterData[floor];
+        floor_data = equipment[floor];
         for (const lab_name in floor_data) {
             if (Object.prototype.hasOwnProperty.call(floor_data, lab_name)) {
                 try {
@@ -43,8 +45,11 @@ exports.modifySearchdb = functions.region("asia-northeast3").database.ref("/equi
                                             }
                                             if (typeof searchdb[item_name] === "undefined") {
                                                 searchdb[item_name] = [item_data];
+                                                if (typeof searchdb_origin[item_name]["description"] !== "undefined") {
+                                                    searchdb[item_name]["description"] = searchdb_origin[item_name]["description"];
+                                                    functions.logger.log("item data:", item_data);
+                                                }
                                             } else {
-                                                functions.logger.log("item data2", item_data);
                                                 searchdb[item_name].push(item_data);
                                             }
                                         }
