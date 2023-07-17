@@ -89,7 +89,7 @@ function LabMap(props){
                             width={closet['option']['width']} 
                             height={closet['option']['height']} 
                             closetNum={closet['data']['closetNum']} 
-                            closetContent={names.slice(0,2).toString().replace(/,/g, '\n')} 
+                            closetContent={names.slice(0,1).toString().replace(/,/g, '\n')} 
                             onChangeMode={()=>{ navigate(`/closet?labName=${encodeURIComponent(props.labname)}&floor=${encodeURIComponent(props.floor)}&closetNum=${closet['data']['closetNum']}&i=${i}&j=${closetIndex}`)
                         }}></MapFactor>)
                     }
