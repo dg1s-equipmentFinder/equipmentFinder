@@ -82,9 +82,9 @@ function FloorMap(props){
             fmapTop:[
                 {labName:"계단", char: 'stair', width: '2', height: '2'},
                 {labName:"과학 연구실(1)", char: 'etc', width: '2', height: '2'},
-                {labName:"물리 준비실(2)", char: 'lab', width: '2', height: '2'},
+                {labName:"물리 준비실2", char: 'lab', width: '2', height: '2'},
                 {labName:"물리 실험실", char: 'lab', width: '2', height: '2'},
-                {labName:"물리 준비실(1)", char: 'lab', width: '2', height: '2'},
+                {labName:"물리 준비실1", char: 'lab', width: '2', height: '2'},
                 {labName:"일반 교사동 통로", char: 'etc', width: '2', height: '3'},
                 {labName:"계단", char: 'stair', width: '2', height: '2'},
                 {labName:"자판기", char: 'etc', width: '2', height: '2'},
