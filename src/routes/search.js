@@ -107,7 +107,7 @@ function SearchContent(props) {
                     </section >
                 }):<div style={{display:'flex',flexDirection:'column',alignItems:'center',paddingTop:'80px'}}>
                     <p style={{fontSize:'30px',lineHeight:'36px'}}>죄송합니다. 찾으시는 물품이 존재하지 않습니다.</p>
-                    <p style={{fontSize:'20px',color:'#919191'}}>홈페이지 또는 기술지원팀에게 문의해주세요.</p>
+                    <p style={{fontSize:'20px',color:'#919191'}}>정확한 검색어를 입력해주세요.</p>
                 </div>
                 }
             </div>
